@@ -29,3 +29,4 @@ C:\Users\User\Desktop\FakeInsta\FakeInsta\obj\Release\netcoreapp2.1\FakeInsta.pd
 C:\Users\User\Desktop\FakeInsta\FakeInsta\obj\Release\netcoreapp2.1\FakeInsta.genruntimeconfig.cache
 C:\Users\User\Desktop\FakeInsta\FakeInsta\obj\Release\netcoreapp2.1\FakeInsta.csproj.CopyComplete
 C:\Users\User\Desktop\FakeInsta\FakeInsta\obj\Release\netcoreapp2.1\Razor\Areas\Admin\Views\Dashboard\Index.cshtml.g.cs
+C:\Users\User\Desktop\FakeInsta\FakeInsta\obj\Release\netcoreapp2.1\Razor\Views\Home\ErrorNotFound.cshtml.g.cs

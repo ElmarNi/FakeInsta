@@ -309,6 +309,53 @@ section {
                             text-decoration: none;
                         }
 
+    section#errorPage nav {
+        background: white;
+    }
+
+        section#errorPage nav .logo {
+            position: relative;
+        }
+
+            section#errorPage nav .logo:before {
+                position: absolute;
+                content: '';
+                width: 1px;
+                height: 100%;
+                top: 0;
+                left: 188%;
+                background: #535252;
+            }
+
+            section#errorPage nav .logo img {
+                margin-top: -6px;
+                width: 30px;
+            }
+
+        section#errorPage nav .text img {
+            width: 130px;
+        }
+
+        section#errorPage nav a, section#errorPage .body a {
+            color: #00376b;
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+            section#errorPage nav a:hover, section#errorPage .body a:hover {
+                text-decoration: none;
+            }
+
+    section#errorPage .body p {
+        margin: 0;
+        font-weight: 600;
+    }
+
+    section#errorPage .body h1 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
 @media (max-width: 875px) {
     .left-side {
         display: none;

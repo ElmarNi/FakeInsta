@@ -63,7 +63,7 @@ namespace FakeInsta
             {
                 routes.MapRoute(
                     name: "areas",
-                        template: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+                        template: "{area:exists}/{controller=Dashboard}/{action=Index}/{id?}");
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
