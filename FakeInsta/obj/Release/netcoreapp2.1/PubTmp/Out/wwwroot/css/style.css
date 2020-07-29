@@ -1,226 +1,336 @@
 body {
-  height: 100vh;
+    height: 100vh;
 }
 
 section {
-  min-height: 100%;
-  overflow: hidden;
-  background-color: #fafafa;
+    min-height: 100%;
+    overflow: hidden;
+    background-color: #fafafa;
 }
-section main article {
-  margin: 30px auto 0;
-  max-width: 935px;
-  padding-bottom: 44px;
-  width: 100%;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-}
-section main article .right-side {
-  max-width: 350px;
-  width: 100%;
-  color: #262626;
-  margin-top: 35px;
-}
-section main article .right-side .top, section main article .right-side .bottom {
-  background-color: #fff;
-  border: 1px solid #dbdbdb;
-  border-radius: 1px;
-  padding: 10px 40px;
-}
-section main article .right-side .top {
-  margin: 0 0 10px;
-  padding-bottom: 20px;
-}
-section main article .right-side .top .instagram-word {
-  margin-top: 20px;
-  margin-bottom: 12px;
-  background-image: url(../img/32f0a4f27407.png);
-  background-repeat: no-repeat;
-  height: 53px;
-  width: 175px;
-}
-section main article .right-side .top form {
-  margin-top: 24px;
-  width: 100%;
-}
-section main article .right-side .top form .form-input-holder {
-  margin-bottom: 6px;
-  position: relative;
-}
-section main article .right-side .top form .form-input-holder input {
-  background: #fafafa;
-  border: 1px solid #dbdbdb;
-  border-radius: 3px;
-  width: 100%;
-  height: 38px;
-  font-size: 12px;
-  padding: 8px;
-}
-section main article .right-side .top form .form-input-holder input:focus {
-  border: 1px solid #a8a8a8;
-  outline: 0px;
-}
-section main article .right-side .top form .form-input-holder p {
-  color: #8e8e8e;
-  font-size: 12px;
-  left: 9px;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  margin: 0;
-  pointer-events: none;
-  z-index: 1;
-  -webkit-transition: all .0005s ease;
-  transition: all .0005s ease;
-}
-section main article .right-side .top form .form-input-holder.active input {
-  padding-bottom: 0px;
-}
-section main article .right-side .top form .form-input-holder.active p {
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
-  top: 4px;
-  font-size: 10px;
-}
-section main article .right-side .top form .login {
-  margin-top: 8px;
-  background-color: #0095f6;
-  width: 100%;
-  border-radius: 4px;
-  color: white;
-  padding: 4px 9px;
-  border: 1px solid transparent;
-  font-weight: 600;
-  font-size: 14px;
-}
-section main article .right-side .top form .login[disabled] {
-  background-color: rgba(0, 149, 246, 0.3);
-}
-section main article .right-side .top .or-div {
-  width: 100%;
-  margin: 13px 0px 18px;
-  position: relative;
-}
-section main article .right-side .top .or-div::after, section main article .right-side .top .or-div::before {
-  content: '';
-  position: absolute;
-  height: 1px;
-  width: 107px;
-  background: #dbdbdb;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-section main article .right-side .top .or-div::before {
-  left: 0;
-}
-section main article .right-side .top .or-div::after {
-  right: 0;
-}
-section main article .right-side .top .or-div p {
-  margin: 0;
-  color: #8e8e8e;
-  font-size: 13px;
-  font-weight: 600;
-}
-section main article .right-side .top a:hover {
-  text-decoration: none;
-}
-section main article .right-side .top .login-fb a .logo {
-  background-size: cover;
-  display: inline-block;
-  margin-right: 3px;
-  position: relative;
-  top: 3px;
-  background-repeat: no-repeat;
-  background-image: url(../img/fb-logo-icon-facebook-26.png);
-  height: 16px;
-  width: 16px;
-}
-section main article .right-side .top .login-fb a .text {
-  color: #385185;
-  font-weight: 600;
-  font-size: 14px;
-}
-section main article .right-side .top a {
-  margin-top: 12px;
-  width: 100%;
-  color: #00376bc9;
-  font-size: 12px;
-  text-align: center;
-}
-section main article .right-side .bottom p {
-  color: #262626ab;
-  font-size: 14px;
-  margin: 7px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-section main article .right-side .bottom p a {
-  margin-left: 3px;
-  font-weight: 600;
-  font-size: 14px;
-  color: #0095f6;
-}
-section main article .right-side .bottom p a:hover {
-  text-decoration: none;
-}
-section main article .right-side .store-tags {
-  padding: 20px 40px;
-}
-section main article .right-side .store-tags p {
-  color: #262626;
-  font-size: 14px;
-  text-align: center;
-}
-section main article .right-side .store-tags .store-icons a img {
-  height: 40px;
-}
-section main article .right-side .store-tags .store-icons a:first-child {
-  margin-left: -8px;
-  margin-right: 8px;
-}
-section main article .left-side {
-  background-image: url(../img/9364675fb26a.png);
-  background-position: 0 0;
-  background-size: 454px 618px;
-  -ms-flex-preferred-size: 454px;
-      flex-basis: 454px;
-  height: 618px;
-  margin-left: -35px;
-  margin-right: -15px;
-  position: relative;
-}
-section main article .left-side img {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 427px;
-  width: 240px;
-  margin: 99px 0 0 151px;
-  -webkit-transition: all 1.5s ease-in;
-  transition: all 1.5s ease-in;
-  opacity: 0;
-  visibility: hidden;
-}
-section main article .left-side img.active {
-  opacity: 1;
-  visibility: visible;
-}
+
+    section main article {
+        margin: 30px auto 0;
+        max-width: 935px;
+        padding-bottom: 44px;
+        width: 100%;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+    }
+
+        section main article .right-side {
+            max-width: 350px;
+            width: 100%;
+            color: #262626;
+            margin-top: 35px;
+        }
+
+            section main article .right-side .top, section main article .right-side .bottom {
+                background-color: #fff;
+                border: 1px solid #dbdbdb;
+                border-radius: 1px;
+                padding: 10px 40px;
+            }
+
+            section main article .right-side .top {
+                margin: 0 0 10px;
+                padding-bottom: 20px;
+            }
+
+                section main article .right-side .top .instagram-word {
+                    margin-top: 20px;
+                    margin-bottom: 12px;
+                    background-image: url(../img/32f0a4f27407.png);
+                    background-repeat: no-repeat;
+                    height: 53px;
+                    width: 175px;
+                }
+
+                section main article .right-side .top form {
+                    margin-top: 24px;
+                    width: 100%;
+                }
+
+                    section main article .right-side .top form .form-input-holder {
+                        margin-bottom: 6px;
+                        position: relative;
+                    }
+
+                        section main article .right-side .top form .form-input-holder input {
+                            background: #fafafa;
+                            border: 1px solid #dbdbdb;
+                            border-radius: 3px;
+                            width: 100%;
+                            height: 38px;
+                            font-size: 12px;
+                            padding: 8px;
+                        }
+
+                            section main article .right-side .top form .form-input-holder input:focus {
+                                border: 1px solid #a8a8a8;
+                                outline: 0px;
+                            }
+
+                        section main article .right-side .top form .form-input-holder p {
+                            color: #8e8e8e;
+                            font-size: 12px;
+                            left: 9px;
+                            position: absolute;
+                            top: 50%;
+                            -webkit-transform: translateY(-50%);
+                            transform: translateY(-50%);
+                            margin: 0;
+                            pointer-events: none;
+                            z-index: 1;
+                            -webkit-transition: all .0005s ease;
+                            transition: all .0005s ease;
+                        }
+
+                        section main article .right-side .top form .form-input-holder.active input {
+                            padding-bottom: 0px;
+                        }
+
+                        section main article .right-side .top form .form-input-holder.active p {
+                            -webkit-transform: translateY(0%);
+                            transform: translateY(0%);
+                            top: 4px;
+                            font-size: 10px;
+                        }
+
+                    section main article .right-side .top form .login-button-holder {
+                        margin-top: 8px;
+                        background-color: #0095f6;
+                        width: 100%;
+                        border-radius: 4px;
+                        padding: 4px 9px;
+                        border: 1px solid transparent;
+                    }
+
+                        section main article .right-side .top form .login-button-holder input {
+                            width: 100%;
+                            height: 100%;
+                            background: transparent;
+                            border: transparent;
+                            outline: transparent;
+                            color: white;
+                            font-weight: 600;
+                            font-size: 14px;
+                        }
+
+                        section main article .right-side .top form .login-button-holder img {
+                            height: 20px;
+                        }
+
+                        section main article .right-side .top form .login-button-holder.disabled {
+                            background-color: rgba(0, 149, 246, 0.3);
+                        }
+
+                section main article .right-side .top .or-div {
+                    width: 100%;
+                    margin: 13px 0px 18px;
+                    position: relative;
+                }
+
+                    section main article .right-side .top .or-div::after, section main article .right-side .top .or-div::before {
+                        content: '';
+                        position: absolute;
+                        height: 1px;
+                        width: 107px;
+                        background: #dbdbdb;
+                        top: 50%;
+                        -webkit-transform: translateY(-50%);
+                        transform: translateY(-50%);
+                    }
+
+                    section main article .right-side .top .or-div::before {
+                        left: 0;
+                    }
+
+                    section main article .right-side .top .or-div::after {
+                        right: 0;
+                    }
+
+                    section main article .right-side .top .or-div p {
+                        margin: 0;
+                        color: #8e8e8e;
+                        font-size: 13px;
+                        font-weight: 600;
+                    }
+
+                section main article .right-side .top a:hover {
+                    text-decoration: none;
+                }
+
+                section main article .right-side .top .login-fb a .logo {
+                    background-size: cover;
+                    display: inline-block;
+                    margin-right: 3px;
+                    position: relative;
+                    top: 3px;
+                    background-repeat: no-repeat;
+                    background-image: url(../img/fb-logo-icon-facebook-26.png);
+                    height: 16px;
+                    width: 16px;
+                }
+
+                section main article .right-side .top .login-fb a .text {
+                    color: #385185;
+                    font-weight: 600;
+                    font-size: 14px;
+                }
+
+                section main article .right-side .top a {
+                    margin-top: 12px;
+                    width: 100%;
+                    color: #00376bc9;
+                    font-size: 12px;
+                    text-align: center;
+                }
+
+            section main article .right-side .bottom p {
+                color: #262626ab;
+                font-size: 14px;
+                margin: 7px 0;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+            }
+
+                section main article .right-side .bottom p a {
+                    margin-left: 3px;
+                    font-weight: 600;
+                    font-size: 14px;
+                    color: #0095f6;
+                }
+
+                    section main article .right-side .bottom p a:hover {
+                        text-decoration: none;
+                    }
+
+            section main article .right-side .store-tags {
+                padding: 20px 40px;
+            }
+
+                section main article .right-side .store-tags p {
+                    color: #262626;
+                    font-size: 14px;
+                    text-align: center;
+                }
+
+                section main article .right-side .store-tags .store-icons a img {
+                    height: 40px;
+                }
+
+                section main article .right-side .store-tags .store-icons a:first-child {
+                    margin-left: -8px;
+                    margin-right: 8px;
+                }
+
+        section main article .left-side {
+            background-image: url(../img/9364675fb26a.png);
+            background-position: 0 0;
+            background-size: 454px 618px;
+            -ms-flex-preferred-size: 454px;
+            flex-basis: 454px;
+            height: 618px;
+            margin-left: -35px;
+            margin-right: -15px;
+            position: relative;
+        }
+
+            section main article .left-side img {
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 427px;
+                width: 240px;
+                margin: 99px 0 0 151px;
+                -webkit-transition: all 1.5s ease-in;
+                transition: all 1.5s ease-in;
+                opacity: 0;
+                visibility: hidden;
+            }
+
+                section main article .left-side img.active {
+                    opacity: 1;
+                    visibility: visible;
+                }
+
+    section footer {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding: 0px 20px;
+    }
+
+        section footer .footer-menu {
+            width: 100%;
+            max-width: 1012px;
+            padding: 40px 0;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+            section footer .footer-menu p {
+                margin: 0;
+                color: #8e8e8e;
+            }
+
+            section footer .footer-menu ul {
+                padding: 0;
+                max-width: 100%;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                margin-right: 16px;
+                margin-bottom: 3px;
+                list-style: none;
+                display: flex;
+            }
+
+                section footer .footer-menu ul li {
+                    margin-bottom: 7px;
+                    margin-right: 16px;
+                }
+
+                    section footer .footer-menu ul li a {
+                        color: #00376b;
+                    }
+
+                        section footer .footer-menu ul li a:hover {
+                            text-decoration: none;
+                        }
 
 @media (max-width: 875px) {
-  .left-side {
-    display: none;
-  }
+    .left-side {
+        display: none;
+    }
 
-  section main article .right-side {
-    margin-top: 15px;
-  }
+    section main article .right-side {
+        margin-top: 15px;
+    }
+
+    section footer .footer-menu {
+        max-width: 360px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+        section footer .footer-menu ul {
+            margin: 0;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+        }
 }

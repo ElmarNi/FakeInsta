@@ -9,7 +9,6 @@ C:\Users\User\Desktop\FakeInsta\FakeInsta\bin\Debug\netcoreapp2.1\FakeInsta.pdb
 C:\Users\User\Desktop\FakeInsta\FakeInsta\bin\Debug\netcoreapp2.1\FakeInsta.Views.dll
 C:\Users\User\Desktop\FakeInsta\FakeInsta\bin\Debug\netcoreapp2.1\FakeInsta.Views.pdb
 C:\Users\User\Desktop\FakeInsta\FakeInsta\obj\Debug\netcoreapp2.1\FakeInsta.csprojAssemblyReference.cache
-C:\Users\User\Desktop\FakeInsta\FakeInsta\obj\Debug\netcoreapp2.1\FakeInsta.csproj.CoreCompileInputs.cache
 C:\Users\User\Desktop\FakeInsta\FakeInsta\obj\Debug\netcoreapp2.1\FakeInsta.RazorAssemblyInfo.cache
 C:\Users\User\Desktop\FakeInsta\FakeInsta\obj\Debug\netcoreapp2.1\FakeInsta.RazorAssemblyInfo.cs
 C:\Users\User\Desktop\FakeInsta\FakeInsta\obj\Debug\netcoreapp2.1\FakeInsta.AssemblyInfoInputs.cache
@@ -18,7 +17,6 @@ C:\Users\User\Desktop\FakeInsta\FakeInsta\obj\Debug\netcoreapp2.1\FakeInsta.TagH
 C:\Users\User\Desktop\FakeInsta\FakeInsta\obj\Debug\netcoreapp2.1\FakeInsta.TagHelpers.output.cache
 C:\Users\User\Desktop\FakeInsta\FakeInsta\obj\Debug\netcoreapp2.1\FakeInsta.RazorCoreGenerate.cache
 C:\Users\User\Desktop\FakeInsta\FakeInsta\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\User\Desktop\FakeInsta\FakeInsta\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\User\Desktop\FakeInsta\FakeInsta\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
 C:\Users\User\Desktop\FakeInsta\FakeInsta\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\User\Desktop\FakeInsta\FakeInsta\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
@@ -29,3 +27,5 @@ C:\Users\User\Desktop\FakeInsta\FakeInsta\obj\Debug\netcoreapp2.1\FakeInsta.dll
 C:\Users\User\Desktop\FakeInsta\FakeInsta\obj\Debug\netcoreapp2.1\FakeInsta.pdb
 C:\Users\User\Desktop\FakeInsta\FakeInsta\obj\Debug\netcoreapp2.1\FakeInsta.genruntimeconfig.cache
 C:\Users\User\Desktop\FakeInsta\FakeInsta\obj\Debug\netcoreapp2.1\FakeInsta.csproj.CopyComplete
+C:\Users\User\Desktop\FakeInsta\FakeInsta\obj\Debug\netcoreapp2.1\FakeInsta.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\FakeInsta\FakeInsta\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Dashboard\Index.cshtml.g.cs

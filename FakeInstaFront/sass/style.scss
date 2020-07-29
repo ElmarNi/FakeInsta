@@ -76,19 +76,29 @@ section{
                                 font-size: 10px;
                             }
                         }
-                        .login{
+                        .login-button-holder{
                             margin-top: 8px;
                             background-color: #0095f6;
                             width: 100%;
                             border-radius: 4px;
-                            color: white;
                             padding: 4px 9px;
                             border: 1px solid transparent;
-                            font-weight: 600;
-                            font-size: 14px;
+                            input{
+                                width: 100%;
+                                height: 100%;
+                                background: transparent;
+                                border: transparent;
+                                outline: transparent;
+                                color: white;
+                                font-weight: 600;
+                                font-size: 14px;
+                            }
+                            img{
+                                height: 20px;
+                            }
                         }
-                        .login[disabled]{
-                            background-color: rgba(0,149,246,.3);
+                        .login-button-holder.disabled{
+                            background-color: rgba(0, 149, 246, 0.3);
                         }
                     }
                     .or-div{
@@ -215,6 +225,42 @@ section{
             }
         }
     }
+    footer{
+        display: flex;
+        justify-content: center;
+        padding: 0px 20px;
+        .footer-menu{
+            width: 100%;
+            max-width: 1012px;
+            padding: 40px 0;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            p{
+                margin: 0;
+                color: #8e8e8e;
+            }
+            ul{
+                padding: 0;
+                max-width: 100%;
+                display: flex;
+                margin-right: 16px;
+                margin-bottom: 3px;
+                list-style: none;
+                display: flex;
+                li{
+                    margin-bottom: 7px;
+                    margin-right: 16px;
+                    a{
+                        color: #00376b;
+                        &:hover{
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 875px) { 
@@ -223,5 +269,14 @@ section{
     }
     section main article .right-side{
         margin-top: 15px;
+    }
+    section footer .footer-menu{
+        max-width: 360px;
+        justify-content: center;
+    }
+    section footer .footer-menu ul{
+        margin: 0;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }

@@ -1,6 +1,7 @@
 "use strict"
 let loginInputs = document.querySelectorAll('.form-input-holder input');
-let submitInput = document.querySelector('form .login')
+let loginBtnHolder = document.querySelector('form .login-button-holder')
+let loginBtn = document.querySelector('form .login-button-holder input')
 let images = document.querySelectorAll('.left-side img')
 function changeParagraph(e) {
     if (e.value != "") {
@@ -9,14 +10,19 @@ function changeParagraph(e) {
     else {
         e.parentElement.classList.remove("active")
     }
-    if (loginInputs[0].value.length > 4 && loginInputs[1].value.length > 7) {
-        submitInput.disabled = false
+}
+function toggleDisabled(params) {
+    if (loginInputs[0].value.length >= 4 && loginInputs[1].value.length >= 7) {
+        loginBtnHolder.classList.remove("disabled")
     }
     else {
-        submitInput.disabled = true
+        loginBtnHolder.classList.add("disabled")
     }
 }
-
+loginBtn.addEventListener("click", function () {
+    loginBtn.classList.add("d-none")
+    loginBtn.nextElementSibling.classList.remove("d-none")
+})
 let activeImg;
 let timer = setInterval(() => {
     images.forEach(image => {
@@ -24,7 +30,8 @@ let timer = setInterval(() => {
             activeImg = image
         }
     }
-)}, 2000)
+    )
+}, 2000)
 let intervalForImages = setInterval(() => {
     images.forEach(image => {
         if (image.classList.contains("active")) {
@@ -35,7 +42,7 @@ let intervalForImages = setInterval(() => {
         activeImg.classList.remove("active")
         activeImg.nextElementSibling.classList.add("active")
     }
-    else{
+    else {
         activeImg.classList.remove("active")
         images[0].classList.add("active")
     }
